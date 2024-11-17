@@ -1,117 +1,112 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl"> 
+<html lang="fa" dir="rtl">
+
 <head>
-    <title>قالب فارسی مستند</title>
-    
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bootstrap Documentation Template For Software Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico"> 
-    
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome JS-->
-    <script defer src="assets/fontawesome/js/all.min.js"></script>
+	<title>قالب فارسی مستند</title>
 
-    <!-- Theme CSS -->  
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
-    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css?4">
-	<style>
-		/* 
-* Medium
-* ---------------------------------------
-*/
-@font-face {
-    font-family: 'IRANYekanRd';
-    src: local('IRANYekanRd Medium'), local('IRANYekanRd-Medium'),
-        url('assets/fonts/YekanBakhFaNum-Bold.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Bootstrap Documentation Template For Software Developers">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+	<link rel="shortcut icon" href="favicon.ico">
 
-*{
-	font-family: 'IRANYekanRd','Times New Roman', Times, serif !important;
-}
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
 
+	<!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
 
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+		integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css?12545dfasdf">
 
-.reading-progress-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background-color: #f0f0f0;
-    z-index: 9999;
-}
+</head>
 
-.reading-progress-bar {
-    height: 100%;
-    background-color: #007bff;
-    width: 0%;
-    transition: width 0.1s ease-out;
-	position: fixed;
-    height: .2rem;
-}
-.page-header{
-	background-image: url(assets/images/wallpaper_light-scaled-1.jpeg) !important;
-	background-size:100% auto;
-	background-position: center;
-	background-attachment: fixed;
-}
-	</style>
-</head> 
-
-<body>    
-    <header class="header fixed-top element-to-toggle-dark">	    
+<body onload="">
+	<div id="loader" class="loader">
+		<div class="wrapper">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<header class="header fixed-top element-to-toggle-dark d-none">
 		<div class="reading-progress-bar" id="reading-progress-bar"></div>
-        <div class="branding docs-branding">
-            <div class="container-fluid position-relative py-2">
-                <div class="docs-logo-wrapper">
-					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 " type="button">
-	                    <span></span>
-	                    <span></span>
-	                    <span></span>
-	                </button>
-	                <div class="site-logo">
-						<a class="navbar-brand" href="index.html"><img class="logo-icon ms-2 rounded-pill" width="32px" src="assets/images/landscape-placeholder.svg" alt="logo">
-							<span class="logo-text">مستندات و پایگاه دانش</span></a>
-						</div>    
-                </div><!--//docs-logo-wrapper-->
-	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
-	                <div class="top-search-box d-none d-lg-flex">
-		                <form class="search-form">
-				            <input type="text" placeholder="جستجوی در مستندات ..." name="search" class="form-control search-input">
-				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-				        </form>
-	                </div>
-	
-					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
-						<li class="list-inline-item"><a href="#"><i class="fa-brands fa-github fa-fw"></i></a></li>
-		            </ul><!--//social-list-->
-					<div class="mode-switcher mx-2">
-						<div class="form-check form-switch">
-							<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-							<label class="form-check-label" for="flexSwitchCheckChecked">						<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M20.7151 8.19412L19.1989 9.7103C18.8143 10.0949 18.1907 10.0949 17.8061 9.7103L16.2899 8.19412C15.9053 7.80951 15.9053 7.18592 16.2899 6.8013L17.8061 5.28513C18.1907 4.90052 18.8143 4.90052 19.1989 5.28513L20.7151 6.8013C21.0997 7.18592 21.0997 7.80951 20.7151 8.19412Z" fill="currentColor"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8131 5.71649C11.8974 5.54274 11.8739 5.33599 11.7529 5.18554C11.6319 5.03508 11.4349 4.96788 11.2472 5.01296C9.81408 5.37803 8.50575 6.12229 7.45961 7.16757C4.23645 10.3084 4.16886 15.4672 7.30861 18.6914C10.5328 21.8312 15.6916 21.7636 18.8325 18.5405C19.8778 17.4943 20.6221 16.186 20.9871 14.753C21.0322 14.5652 20.965 14.3683 20.8146 14.2472C20.6641 14.1262 20.4574 14.1027 20.2836 14.187C17.8473 15.3654 14.9339 14.8932 12.9946 13.0055C11.1069 11.0662 10.6347 8.15281 11.8131 5.71649Z" fill="currentColor"></path></svg> 
-							</label>
-						  </div>
+		<div class="branding docs-branding">
+			<div class="container-fluid position-relative py-2">
+
+				<div class="docs-top-utilities d-flex justify-content-around align-items-center">
+					<div class="docs-logo-wrapper">
+						<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 "
+							type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+						<div class="site-logo">
+							<a class="navbar-brand" href="index.html">
+
+								<span class="logo-text">مستندات</span></a>
+						</div>
+					</div>
+					<!--//docs-logo-wrapper-->
+					<div class="top-search-box d-none d-xl-flex">
+						<form class="search-form">
+							<input type="text" placeholder="جستجوی در مستندات ..." name="search"
+								class="form-control search-input">
+							<button type="submit" class="btn search-btn" value="Search"><i
+									class="fas fa-search"></i></button>
+						</form>
 					</div>
 
-		            <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-5-documentation-template-for-software-projects/" class="btn btn-primary d-none d-lg-flex">Download</a>
-	            </div><!--//docs-top-utilities-->
-            </div><!--//container-->
-        </div><!--//branding-->
-    </header><!--//header-->
-    
-    <div id="docs-sidebar" class="docs-sidebar  element-to-toggle-dark">
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-xl-flex">
+						<li class="list-inline-item"><a href="#"><i class="fa-brands fa-github fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa-brands fa-slack fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa-brands fa-product-hunt fa-fw"></i></a>
+						</li>
+					</ul>
+
+					<!--//social-list-->
+					<div class="row align-items-center">
+						<div class="mode-switcher mx-2 col ">
+							<div class="form-check form-switch">
+								<input class="form-check-input" type="checkbox" role="switch"
+									id="flexSwitchCheckChecked" checked>
+								<label class="form-check-label" for="flexSwitchCheckChecked"> <svg width="26"
+										height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"
+										class="icon">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M20.7151 8.19412L19.1989 9.7103C18.8143 10.0949 18.1907 10.0949 17.8061 9.7103L16.2899 8.19412C15.9053 7.80951 15.9053 7.18592 16.2899 6.8013L17.8061 5.28513C18.1907 4.90052 18.8143 4.90052 19.1989 5.28513L20.7151 6.8013C21.0997 7.18592 21.0997 7.80951 20.7151 8.19412Z"
+											fill="currentColor"></path>
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M11.8131 5.71649C11.8974 5.54274 11.8739 5.33599 11.7529 5.18554C11.6319 5.03508 11.4349 4.96788 11.2472 5.01296C9.81408 5.37803 8.50575 6.12229 7.45961 7.16757C4.23645 10.3084 4.16886 15.4672 7.30861 18.6914C10.5328 21.8312 15.6916 21.7636 18.8325 18.5405C19.8778 17.4943 20.6221 16.186 20.9871 14.753C21.0322 14.5652 20.965 14.3683 20.8146 14.2472C20.6641 14.1262 20.4574 14.1027 20.2836 14.187C17.8473 15.3654 14.9339 14.8932 12.9946 13.0055C11.1069 11.0662 10.6347 8.15281 11.8131 5.71649Z"
+											fill="currentColor"></path>
+									</svg>
+								</label>
+							</div>
+						</div>
+						<div class="col">
+							<a href="" class="btn btn-primary d-none d-xl-flex">دانلود</a>
+						</div>
+
+					</div>
+
+
+				</div><!--//docs-top-utilities-->
+			</div><!--//container-->
+		</div><!--//branding-->
+	</header><!--//header-->
+
+	<div id="docs-sidebar" class="docs-sidebar  element-to-toggle-dark siderbar-hidden">
 		<div class="top-search-box d-lg-none p-3">
 			<form class="search-form">
-				<input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+				<input type="text" placeholder="جستجو ..." name="search" class="form-control search-input">
 				<button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
 			</form>
 
@@ -121,222 +116,321 @@
 				<li class="list-inline-item"><a href="#"><i class="fa-brands fa-slack fa-fw"></i></a></li>
 				<li class="list-inline-item"><a href="#"><i class="fa-brands fa-product-hunt fa-fw"></i></a></li>
 			</ul><!--//social-list-->
-			<a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-5-documentation-template-for-software-projects/" class="btn btn-primary mt-2 d-block d-lg-flex">Download</a>
+			<a href=""
+				class="btn btn-primary mt-2 d-block d-lg-flex">دانلود</a>
 		</div>
 		<nav id="docs-nav" class="docs-nav navbar">
-			</nav><!--//docs-nav-->
+			<p>
+				سایدبار با قابلیت سفارشی سازی
+			</p>
+		</nav><!--//docs-nav-->
 	</div><!--//docs-sidebar-->
-    <div class="page-header   py-5 text-center position-relative">
-	    <div class="theme-bg-shapes-right"></div>
-	    <div class="theme-bg-shapes-left"></div>
-	    <div class="container">
-		    <h1 class="page-heading  single-col-max mx-auto">مستندات فنی و پایگاه دانش</h1>
-		    <div class="page-intro single-col-max mx-auto">Everything you need to get your software documentation online.</div>
-		    <div class="main-search-box pt-3 d-block mx-auto">
-                 <form class="search-form w-100">
-		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
-		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-		        </form>
-             </div>
-	    </div>
-    </div><!--//page-header-->
-   <div class="page-content">
-	    <div class="container">
-		    <div class="docs-overview py-5">
-			    <div class="row justify-content-center">
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder me-2">
-								        <i class="fas fa-map-signs"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Introduction</span>
-							    </h5>
-							    <div class="card-text">
-								    Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-							    </div>
-							    <a class="card-link-mask" href="docs-page.html#section-1"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder me-2">
-								        <i class="fas fa-arrow-down"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Installation</span>
-							    </h5>
-							    <div class="card-text">
-								    Section overview goes here. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-							    </div>
-							    <a class="card-link-mask" href="docs-page.html#section-2"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder me-2">
-								        <i class="fas fa-box fa-fw"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">APIs</span>
-							    </h5>
-							    <div class="card-text">
-								    Section overview goes here. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.						    
+	<div class="page-header   py-5 text-center position-relative">
+		<div class="theme-bg-shapes-right"></div>
+		<div class="theme-bg-shapes-left"></div>
+		<div class="container">
+			<h1 class="page-heading py-5 single-col-max mx-auto">مستندات فنی و پایگاه دانش</h1>
+			<div class="page-intro single-col-max mx-auto">
+				هر آنچه برای مستندسازی لازم دارید اینجاست.
+			</div>
+			<div class="main-search-box pt-3 d-block mx-auto">
+				<form class="search-form w-100">
+					<input type="text" placeholder="جستجو ..." name="search" class="form-control search-input">
+					<button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
+		</div>
+	</div><!--//page-header-->
+	<div class="page-content">
+		<div class="container">
+			<div class="docs-overview py-5">
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-4 py-3">
+						<div class="card shadow-sm">
+							<div class="card-body">
+								<h5 class="card-title mb-3">
+									<span class="theme-icon-holder card-icon-holder me-2">
+										<i class="fas fa-map-signs"></i>
+									</span><!--//card-icon-holder-->
+									<span class="card-title-text">مقدمه</span>
+								</h5>
+								<div class="card-text">
+									بخش مقدمه، در یک مستند قوی بخش مقدمه بسیار ضروریست. می‌توانید به دلخواه متن این قسمت
+									را تغییر دهید.
 								</div>
-							    <a class="card-link-mask" href="docs-page.html#section-3"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder me-2">
-								        <i class="fas fa-cogs fa-fw"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Integrations</span>
-							    </h5>
-							    <div class="card-text">
-								    Section overview goes here. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.						    
+								<a class="card-link-mask" href="docs-page.html#section-1"></a>
+							</div><!--//card-body-->
+						</div><!--//card-->
+					</div><!--//col-->
+					<div class="col-12 col-lg-4 py-3">
+						<div class="card shadow-sm">
+							<div class="card-body">
+								<h5 class="card-title mb-3">
+									<span class="theme-icon-holder card-icon-holder me-2">
+										<i class="fas fa-arrow-down"></i>
+									</span><!--//card-icon-holder-->
+									<span class="card-title-text">نصب و پیکربندی</span>
+								</h5>
+								<div class="card-text">
+									بخش نصب و پیکربندی، در یک مستند قوی بخش نصب و پیکربندی بسیار ضروریست. می‌توانید به
+									دلخواه متن این قسمت را تغییر دهید. </div>
+								<a class="card-link-mask" href="docs-page.html#section-2"></a>
+							</div><!--//card-body-->
+						</div><!--//card-->
+					</div><!--//col-->
+					<div class="col-12 col-lg-4 py-3">
+						<div class="card shadow-sm">
+							<div class="card-body">
+								<h5 class="card-title mb-3">
+									<span class="theme-icon-holder card-icon-holder me-2">
+										<i class="fas fa-box fa-fw"></i>
+									</span><!--//card-icon-holder-->
+									<span class="card-title-text">وبسرویس</span>
+								</h5>
+								<div class="card-text">
+									بخش وبسرویس، در یک مستند قوی بخش وبسرویس بسیار ضروریست. می‌توانید به دلخواه متن این
+									قسمت را تغییر دهید. </div>
+								<a class="card-link-mask" href="docs-page.html#section-3"></a>
+							</div><!--//card-body-->
+						</div><!--//card-->
+					</div><!--//col-->
+					<div class="col-12 col-lg-4 py-3">
+						<div class="card shadow-sm">
+							<div class="card-body">
+								<h5 class="card-title mb-3">
+									<span class="theme-icon-holder card-icon-holder me-2">
+										<i class="fas fa-cogs fa-fw"></i>
+									</span><!--//card-icon-holder-->
+									<span class="card-title-text">یکپارچه‌سازی</span>
+								</h5>
+								<div class="card-text">
+									بخش یکپارچه‌سازی، در یک مستند قوی بخش یکپارچه‌سازی بسیار ضروریست. می‌توانید به
+									دلخواه متن این قسمت را تغییر دهید.
 								</div>
-							    <a class="card-link-mask" href="docs-page.html#section-4"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder me-2">
-								        <i class="fas fa-tools"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Utilities</span>
-							    </h5>
-							    <div class="card-text">
-								    Section overview goes here. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.						    
-								</div>
-							    <a class="card-link-mask" href="docs-page.html#section-5"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder me-2">
-								        <i class="fas fa-laptop-code"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Web</span>
-							    </h5>
-							    <div class="card-text">
-								    Section overview goes here. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.						    
-								</div>
-							    <a class="card-link-mask" href="docs-page.html#section-6"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder me-2">
-								        <i class="fas fa-tablet-alt"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Mobile</span>
-							    </h5>
-							    <div class="card-text">
-								    Section overview goes here. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.						    
-								</div>
-							    <a class="card-link-mask" href="docs-page.html#section-7"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder me-2">
-								        <i class="fas fa-book-reader"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">Resources</span>
-							    </h5>
-							    <div class="card-text">
-								    Section overview goes here. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.						    
-								</div>
-							    <a class="card-link-mask" href="docs-page.html#section-8"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-				    <div class="col-12 col-lg-4 py-3">
-					    <div class="card shadow-sm">
-						    <div class="card-body">
-							    <h5 class="card-title mb-3">
-								    <span class="theme-icon-holder card-icon-holder me-2">
-								        <i class="fas fa-lightbulb"></i>
-							        </span><!--//card-icon-holder-->
-							        <span class="card-title-text">FAQs</span>
-							    </h5>
-							    <div class="card-text">
-								    Section overview goes here. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.						    
-								</div>
-							    <a class="card-link-mask" href="docs-page.html#section-9"></a>
-						    </div><!--//card-body-->
-					    </div><!--//card-->
-				    </div><!--//col-->
-			    </div><!--//row-->
-		    </div><!--//container-->
+								<a class="card-link-mask" href="docs-page.html#section-4"></a>
+							</div><!--//card-body-->
+						</div><!--//card-->
+					</div><!--//col-->
+					<div class="col-12 col-lg-4 py-3">
+						<div class="card shadow-sm">
+							<div class="card-body">
+								<h5 class="card-title mb-3">
+									<span class="theme-icon-holder card-icon-holder me-2">
+										<i class="fas fa-tools"></i>
+									</span><!--//card-icon-holder-->
+									<span class="card-title-text">کاربرد</span>
+								</h5>
+								<div class="card-text">
+									بخش کاربرد، در یک مستند قوی بخش کاربرد بسیار ضروریست. می‌توانید به دلخواه متن این
+									قسمت را تغییر دهید. </div>
+								<a class="card-link-mask" href="docs-page.html#section-5"></a>
+							</div><!--//card-body-->
+						</div><!--//card-->
+					</div><!--//col-->
+					<div class="col-12 col-lg-4 py-3">
+						<div class="card shadow-sm">
+							<div class="card-body">
+								<h5 class="card-title mb-3">
+									<span class="theme-icon-holder card-icon-holder me-2">
+										<i class="fas fa-laptop-code"></i>
+									</span><!--//card-icon-holder-->
+									<span class="card-title-text">وب</span>
+								</h5>
+								<div class="card-text">
+									بخش وب، در یک مستند قوی بخش وب بسیار ضروریست. می‌توانید به دلخواه متن این قسمت را
+									تغییر دهید. </div>
+
+								<a class="card-link-mask" href="docs-page.html#section-6"></a>
+							</div><!--//card-body-->
+						</div><!--//card-->
+					</div><!--//col-->
+					<div class="col-12 col-lg-4 py-3">
+						<div class="card shadow-sm">
+							<div class="card-body">
+								<h5 class="card-title mb-3">
+									<span class="theme-icon-holder card-icon-holder me-2">
+										<i class="fas fa-tablet-alt"></i>
+									</span><!--//card-icon-holder-->
+									<span class="card-title-text">موبایل</span>
+								</h5>
+								<div class="card-text">
+									بخش موبایل، در یک مستند قوی بخش موبایل بسیار ضروریست. می‌توانید به دلخواه متن این
+									قسمت را تغییر دهید. </div>
+
+								<a class="card-link-mask" href="docs-page.html#section-7"></a>
+							</div><!--//card-body-->
+						</div><!--//card-->
+					</div><!--//col-->
+					<div class="col-12 col-lg-4 py-3">
+						<div class="card shadow-sm">
+							<div class="card-body">
+								<h5 class="card-title mb-3">
+									<span class="theme-icon-holder card-icon-holder me-2">
+										<i class="fas fa-book-reader"></i>
+									</span><!--//card-icon-holder-->
+									<span class="card-title-text">منابع</span>
+								</h5>
+								<div class="card-text">
+									بخش منابع، در یک مستند قوی بخش منابع بسیار ضروریست. می‌توانید به دلخواه متن این قسمت
+									را تغییر دهید. </div>
+
+								<a class="card-link-mask" href="docs-page.html#section-8"></a>
+							</div><!--//card-body-->
+						</div><!--//card-->
+					</div><!--//col-->
+					<div class="col-12 col-lg-4 py-3">
+						<div class="card shadow-sm">
+							<div class="card-body">
+								<h5 class="card-title mb-3">
+									<span class="theme-icon-holder card-icon-holder me-2">
+										<i class="fas fa-lightbulb"></i>
+									</span><!--//card-icon-holder-->
+									<span class="card-title-text">پرسش‌های متداول</span>
+								</h5>
+								<div class="card-text">
+									بخش پرسش‌های متداول، در یک مستند قوی بخش پرسش‌های متداول بسیار ضروریست. می‌توانید به
+									دلخواه متن این قسمت را تغییر دهید. </div>
+
+								<a class="card-link-mask" href="docs-page.html#section-9"></a>
+							</div><!--//card-body-->
+						</div><!--//card-->
+					</div><!--//col-->
+				</div><!--//row-->
+			</div><!--//container-->
 		</div><!--//container-->
-    </div><!--//page-content-->
+	</div><!--//page-content-->
 
-    <section class="cta-section text-center py-5 theme-bg-dark position-relative">
-	    <div class="theme-bg-shapes-right"></div>
-	    <div class="theme-bg-shapes-left"></div>
-	    <div class="container">
-		    <h3 class="mb-2 text-white mb-3">سوالات متداول را مرور کنید</h3>
-		    <div class="section-intro text-white mb-3 single-col-max mx-auto">Want to launch your software project and start getting traction from your target users? Check out our premium <a class="text-white" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-5-startup-template-for-software-projects/">Bootstrap 5 startup template CoderPro</a>! It has everything you need to promote your product.</div>
-		    <div class="pt-3 text-center">
-			    <a class="btn btn-light" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-5-startup-template-for-software-projects/">Get CoderPro<i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
-		    </div>
-	    </div>
-    </section><!--//cta-section-->
+	<section class="cta-section text-center py-5 theme-bg-dark position-relative">
+		<div class="theme-bg-shapes-right"></div>
+		<div class="theme-bg-shapes-left"></div>
+		<div class="container">
+			<h3 class="mb-2 text-white mb-3">سوالات متداول را مرور کنید</h3>
+			<div class="section-intro text-white mb-3 single-col-max mx-auto">
+				<div id="accordionPayment" class="accordion accordion-header-primary">
+					<div class="card accordion-item active">
+						<h2 class="accordion-header">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse"
+								aria-expanded="true" data-bs-target="#accordionPayment-1"
+								aria-controls="accordionPayment-1">
+								چه زمانی برای سفارش من پرداخت می شود؟
+							</button>
+						</h2>
 
-    <footer class="footer">
+						<div id="accordionPayment-1" class="accordion-collapse collapse show">
+							<div class="accordion-body lh-2">
+								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+								است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
+								فعلی تکنولوژی
+							</div>
+						</div>
+					</div>
 
-	    <div class="footer-bottom text-center py-5">
-		    
-		    <ul class="social-list list-unstyled pb-4 mb-0">
-			    <li class="list-inline-item"><a href="#"><i class="fa-brands fa-github fa-fw"></i></a></li> 
-	            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a></li>
-	            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-slack fa-fw"></i></a></li>
-	            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-product-hunt fa-fw"></i></a></li>
-	            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-facebook-f fa-fw"></i></a></li>
-	            <li class="list-inline-item"><a href="#"><i class="fa-brands fa-instagram fa-fw"></i></a></li>
-	        </ul><!--//social-list-->
-	        
-	        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-            <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-            
-	        
-	    </div>
-	    
-    </footer>
-       
-    <!-- Javascript -->          
-    <script src="assets/plugins/popper.min.js"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
-    
-    <!-- Page Specific JS -->
-    <script src="assets/plugins/smoothscroll.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
-    <script src="assets/js/highlight-custom.js"></script> 
-    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
-    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
-    <script src="assets/js/docs.js"></script> 
+					<div class="card accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#accordionPayment-2" aria-controls="accordionPayment-2">
+								چگونه هزینه سفارش خود را پرداخت کنم؟
+							</button>
+						</h2>
+						<div id="accordionPayment-2" class="accordion-collapse collapse">
+							<div class="accordion-body lh-2">
+								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+								است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
+								فعلی تکنولوژی مورد نیاز و کاربردهای
+							</div>
+						</div>
+					</div>
+
+					<div class="card accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#accordionPayment-3" aria-controls="accordionPayment-3">
+								اگر در ثبت سفارش با مشکل مواجه شوم چه باید بکنم؟
+							</button>
+						</h2>
+						<div id="accordionPayment-3" class="accordion-collapse collapse">
+							<div class="accordion-body lh-2">
+								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+								است. چاپگرها
+								<a href="javascript:void(0);">لورم ایپسوم متن</a> لورم ایپسوم متن ساختگی با تولید سادگی
+								<strong>1-000-000-000</strong>لورم ایپسوم متن ساختگی
+								<a href="javascript:void(0);">order@companymail.com</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="card accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#accordionPayment-4" aria-controls="accordionPayment-4">
+								برای محصول نهایی که فقط برای کاربران پولی قابل دسترسی است به کدام مجوز نیاز دارم؟
+							</button>
+						</h2>
+						<div id="accordionPayment-4" class="accordion-collapse collapse">
+							<div class="accordion-body lh-2">
+								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+								است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
+								فعلی تکنولوژی
+							</div>
+						</div>
+					</div>
+
+					<div class="card accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#accordionPayment-5" aria-controls="accordionPayment-5">
+								آیا اشتراک من به طور خودکار تمدید می شود؟
+							</button>
+						</h2>
+						<div id="accordionPayment-5" class="accordion-collapse collapse">
+							<div class="accordion-body lh-2">
+								لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+								است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
+								فعلی تکنولوژی مورد نیاز
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="pt-3 text-center">
+				<a class="btn btn-light" href="">
+					<i class="fas fa-phone-alt me-1"></i> پشتیبانی </a>
+			</div>
+		</div>
+	</section><!--//cta-section-->
+
+	<footer class="footer">
+
+		<div class="footer-bottom text-center py-5">
+
+			<ul class="social-list list-unstyled pb-4 mb-0">
+				<li class="list-inline-item"><a href="#"><i class="fa-brands fa-github fa-fw"></i></a></li>
+				<li class="list-inline-item"><a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a></li>
+				<li class="list-inline-item"><a href="#"><i class="fa-brands fa-slack fa-fw"></i></a></li>
+				<li class="list-inline-item"><a href="#"><i class="fa-brands fa-product-hunt fa-fw"></i></a></li>
+				<li class="list-inline-item"><a href="#"><i class="fa-brands fa-facebook-f fa-fw"></i></a></li>
+				<li class="list-inline-item"><a href="#"><i class="fa-brands fa-instagram fa-fw"></i></a></li>
+			</ul>
+
+			<small class="copyright">@ 2024 </small>
+
+
+		</div>
+
+	</footer>
+
+	<!-- Javascript -->
+	<script src="assets/plugins/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Page Specific JS -->
+	<script src="assets/plugins/smoothscroll.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+	<script src="assets/js/highlight-custom.js"></script>
+	<script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+	<script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+	<script src="assets/js/docs.js"></script>
 	<script>
 
 		document.addEventListener('scroll', () => {
@@ -346,62 +440,65 @@
 			const progress = (scrollTop / scrollHeight) * 100;
 			progressBar.style.width = `${progress}%`;
 		});
-		
-		
-				 // Function to save the checkbox state
-				function saveCheckboxState() {
-					const isChecked = document.getElementById('flexSwitchCheckChecked').checked;
-					localStorage.setItem('checkboxState_darkmode', isChecked);
-					toggleClass(isChecked);
-				}
-		
-				// Function to apply or remove the class based on checkbox state
-				function toggleClass(isChecked) {
-					const allElements = document.querySelectorAll('*');           
-					const targetRGB = 'rgb(93, 103, 120)'; // #5d6778 in RGB
-		
-					allElements.forEach(element => {
-						if (isChecked) {
-							element.setAttribute('data-bs-theme', 'dark');
-						} else {
-							element.removeAttribute('data-bs-theme');
-						}
-					});
-		
-		
-					allElements.forEach(element => {
-						const elementColor = window.getComputedStyle(element).color;
-						if (isChecked) {
-						// Check if element has child nodes with text content and if color matches
-							if (elementColor === targetRGB && element.textContent.trim() !== '') {
-								element.style.color = "rgb(189 189 189)"; // Set new color
-							}
-						}else{
-							if (element.textContent.trim() !== '') {
-								element.style.color = ""; // Set new color
-							}
-						}
-					});
-				}
-		
-				// Event listener for checkbox change
-				document.getElementById('flexSwitchCheckChecked').addEventListener('change', saveCheckboxState);
-		
-				// Load checkbox state on page load
-				const foo = window.onload;
-				window.onload = function(){ 
-					foo(); 
-					const savedState = localStorage.getItem('checkboxState_darkmode') === 'true';
-					document.getElementById('flexSwitchCheckChecked').checked = savedState;
-					toggleClass(savedState);
-				}
-					
-		
-		   
-				   
-				
-				</script>
-		
-</body>
-</html> 
 
+
+		// Function to save the checkbox state
+		function saveCheckboxState() {
+			const isChecked = document.getElementById('flexSwitchCheckChecked').checked;
+			localStorage.setItem('checkboxState_darkmode', isChecked);
+			toggleClass(isChecked);
+		}
+
+		// Function to apply or remove the class based on checkbox state
+		function toggleClass(isChecked) {
+			const allElements = document.querySelectorAll('*');
+			const targetRGB = 'rgb(93, 103, 120)'; // #5d6778 in RGB
+
+			allElements.forEach(element => {
+				if (isChecked) {
+					element.setAttribute('data-bs-theme', 'dark');
+				} else {
+					element.removeAttribute('data-bs-theme');
+				}
+			});
+
+
+			allElements.forEach(element => {
+				const elementColor = window.getComputedStyle(element).color;
+				if (isChecked) {
+					// Check if element has child nodes with text content and if color matches
+					if (elementColor === targetRGB && element.textContent.trim() !== '') {
+						element.style.color = "rgb(189 189 189)"; // Set new color
+					}
+				} else {
+					if (element.textContent.trim() !== '') {
+						element.style.color = ""; // Set new color
+					}
+				}
+			});
+		}
+
+		// Event listener for checkbox change
+		document.getElementById('flexSwitchCheckChecked').addEventListener('change', saveCheckboxState);
+
+		// Load checkbox state on page load
+		const foo = window.onload;
+		window.onload = function () {
+			const savedState = localStorage.getItem('checkboxState_darkmode') === 'true';
+			document.getElementById('flexSwitchCheckChecked').checked = savedState;
+			toggleClass(savedState);
+			setTimeout(function () {
+				document.getElementById('loader').remove()
+				document.querySelector('.header').classList.remove('d-none')
+			}, 1000)
+		}
+
+
+
+
+
+	</script>
+
+</body>
+
+</html>
