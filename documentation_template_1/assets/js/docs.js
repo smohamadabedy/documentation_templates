@@ -88,7 +88,7 @@ document.addEventListener('gumshoeActivate', function (event) {
 
 }, false);
 
-var lightbox = new SimpleLightbox('.simplelightbox-gallery a', {/* options */});
+var lightbox = new SimpleLightbox('.simplelightbox-gallery a', {heightRatio:.5,rtl:true});
 
 
 
@@ -153,7 +153,6 @@ document.getElementById('flexSwitchCheckChecked').addEventListener('change', sav
 // Load checkbox state on page load
 const foo = window.onload;
 window.onload = function () {
-	responsiveSidebar()
 	const savedState = localStorage.getItem('checkboxState_darkmode') === 'true';
 	document.getElementById('flexSwitchCheckChecked').checked = savedState;
 	toggleClass(savedState);

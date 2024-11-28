@@ -8,24 +8,21 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Bootstrap Documentation Template For Software Developers">
-	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
-	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="description" content="قالب راستچین ویژه مستندات فنی">
 
-	<!-- Google Font -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+	<!-- Icon -->
+	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- FontAwesome JS-->
 	<script defer src="assets/fontawesome/js/all.min.js"></script>
 
 	<!-- Theme CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
-		integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
 	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css?12545dfasdf">
-
 </head>
 
 <body onload="">
+	<!-- Loading -->
 	<div id="loader" class="loader">
 		<div class="wrapper">
 			<span></span>
@@ -35,6 +32,8 @@
 			<span></span>
 		</div>
 	</div>
+
+	<!--//header-->
 	<header class="header fixed-top element-to-toggle-dark d-none">
 		<div class="reading-progress-bar" id="reading-progress-bar"></div>
 		<div class="branding docs-branding">
@@ -101,7 +100,8 @@
 				</div><!--//docs-top-utilities-->
 			</div><!--//container-->
 		</div><!--//branding-->
-	</header><!--//header-->
+	</header>
+	<!--//header-->
 
 	<div id="docs-sidebar" class="docs-sidebar  element-to-toggle-dark siderbar-hidden">
 		<div class="top-search-box d-lg-none p-3">
@@ -115,7 +115,8 @@
 				<li class="list-inline-item"><a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a></li>
 				<li class="list-inline-item"><a href="#"><i class="fa-brands fa-slack fa-fw"></i></a></li>
 				<li class="list-inline-item"><a href="#"><i class="fa-brands fa-product-hunt fa-fw"></i></a></li>
-			</ul><!--//social-list-->
+			</ul>
+			<!--//social-list-->
 			<a href=""
 				class="btn btn-primary mt-2 d-block d-lg-flex">دانلود</a>
 		</div>
@@ -399,11 +400,8 @@
 			</div>
 		</div>
 	</section><!--//cta-section-->
-
 	<footer class="footer">
-
 		<div class="footer-bottom text-center py-5">
-
 			<ul class="social-list list-unstyled pb-4 mb-0">
 				<li class="list-inline-item"><a href="#"><i class="fa-brands fa-github fa-fw"></i></a></li>
 				<li class="list-inline-item"><a href="#"><i class="fa-brands fa-x-twitter fa-fw"></i></a></li>
@@ -412,18 +410,13 @@
 				<li class="list-inline-item"><a href="#"><i class="fa-brands fa-facebook-f fa-fw"></i></a></li>
 				<li class="list-inline-item"><a href="#"><i class="fa-brands fa-instagram fa-fw"></i></a></li>
 			</ul>
-
 			<small class="copyright">@ 2024 </small>
-
-
 		</div>
-
 	</footer>
-
 	<!-- Javascript -->
 	<script src="assets/plugins/popper.min.js"></script>
 	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"	integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 	<!-- Page Specific JS -->
 	<script src="assets/plugins/smoothscroll.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
@@ -432,73 +425,9 @@
 	<script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
 	<script src="assets/js/docs.js"></script>
 	<script>
-
-		document.addEventListener('scroll', () => {
-			const progressBar = document.getElementById('reading-progress-bar');
-			const scrollTop = document.documentElement.scrollTop;
-			const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-			const progress = (scrollTop / scrollHeight) * 100;
-			progressBar.style.width = `${progress}%`;
-		});
-
-
-		// Function to save the checkbox state
-		function saveCheckboxState() {
-			const isChecked = document.getElementById('flexSwitchCheckChecked').checked;
-			localStorage.setItem('checkboxState_darkmode', isChecked);
-			toggleClass(isChecked);
-		}
-
-		// Function to apply or remove the class based on checkbox state
-		function toggleClass(isChecked) {
-			const allElements = document.querySelectorAll('*');
-			const targetRGB = 'rgb(93, 103, 120)'; // #5d6778 in RGB
-
-			allElements.forEach(element => {
-				if (isChecked) {
-					element.setAttribute('data-bs-theme', 'dark');
-				} else {
-					element.removeAttribute('data-bs-theme');
-				}
-			});
-
-
-			allElements.forEach(element => {
-				const elementColor = window.getComputedStyle(element).color;
-				if (isChecked) {
-					// Check if element has child nodes with text content and if color matches
-					if (elementColor === targetRGB && element.textContent.trim() !== '') {
-						element.style.color = "rgb(189 189 189)"; // Set new color
-					}
-				} else {
-					if (element.textContent.trim() !== '') {
-						element.style.color = ""; // Set new color
-					}
-				}
-			});
-		}
-
-		// Event listener for checkbox change
-		document.getElementById('flexSwitchCheckChecked').addEventListener('change', saveCheckboxState);
-
-		// Load checkbox state on page load
-		const foo = window.onload;
-		window.onload = function () {
-			const savedState = localStorage.getItem('checkboxState_darkmode') === 'true';
-			document.getElementById('flexSwitchCheckChecked').checked = savedState;
-			toggleClass(savedState);
-			setTimeout(function () {
-				document.getElementById('loader').remove()
-				document.querySelector('.header').classList.remove('d-none')
-			}, 1000)
-		}
-
-
-
-
-
+	$(document).ready(function(){
+		document.getElementById("docs-sidebar").classList.remove('sidebar-visible')
+	})
 	</script>
-
 </body>
-
 </html>

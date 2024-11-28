@@ -1,0 +1,4 @@
+//commenting in js
+let myNum = 1;
+var myOtherNum = 2;
+const anothernum = 3;
