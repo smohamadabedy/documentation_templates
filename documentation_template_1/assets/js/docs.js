@@ -52,7 +52,6 @@ sidebarLinks.forEach((sidebarLink) => {
         
         //Collapse sidebar after clicking
 		if (sidebar.classList.contains('sidebar-visible') && window.innerWidth < 1200){
-			
 			sidebar.classList.remove('sidebar-visible');
 		    sidebar.classList.add('sidebar-hidden');
 		} 
@@ -165,7 +164,7 @@ window.onload = function () {
 
 function responsiveSidebar() {
 	let w = window.innerWidth;
-	if (w >= 1200) {
+	if (w >= 961) {
 		// if larger 
 		sidebar.classList.remove('sidebar-hidden');
 		sidebar.classList.add('sidebar-visible');

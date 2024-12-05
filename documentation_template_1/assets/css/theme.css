@@ -14391,7 +14391,7 @@ a.text-link:hover {
     width: 300px;
     position: fixed;
     z-index: 10;
-    top: 69px;
+    top: 74px;
     height: calc(100% - 69px);
     overflow-y: auto;
     scrollbar-color: rgba(0, 0, 0, 0.2) #f5f5f5;
@@ -14522,10 +14522,14 @@ a.text-link:hover {
 
 }
 
+@media only screen and (min-width: 961px) {
+    
 .docs-content {
     margin-right: 300px;
     padding-bottom: 500px;
 }
+  }
+
 
 .docs-article {
     padding: 2rem;
@@ -14534,7 +14538,6 @@ a.text-link:hover {
     scroll-snap-margin-top: 69px;
 }
 
-.docs-article strong {}
 
 .docs-article .docs-heading {
     font-size: 3rem;
